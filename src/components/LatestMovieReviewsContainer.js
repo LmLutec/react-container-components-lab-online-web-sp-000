@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'isomorphic-fetch';
 import MovieReviews from './MovieReviews'
+import MovieReview from './MovieReviews';
 
 const NYT_API_KEY = 'dGpQ5OmGP2SgfvZimlpCUoF4iOag9qzZ';
 const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
@@ -33,7 +34,8 @@ export default class LatestMovieReviewsContainer extends React.Component{
     }
 
     displayReviews = () => {
+        
         // console.log(this.state.reviews)
-        this.state.reviews.map((review) => <li key={review.id}>{review}</li>)
+        // this.state.reviews.map((review) => <li key={review.id}>{review}</li>)
     }
 }
